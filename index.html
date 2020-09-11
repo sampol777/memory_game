@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game!(click start again to add more cards)</h1>
+    <div class="startScore">
+      <button id="startBtn" type="button" onclick="shuffle(COLORS);createDivsForColors(shuffledColors);">start</button>
+      <span id="score">0</span>
+      <div class="bestscoretext">Best score <span id="bestscore"></span></div>
+      <button id="reset">reset</button>
+    </div>
+   
+    <div id="game">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
